@@ -5,11 +5,20 @@ using namespace std;
 
 
 int main() {
-	const string usuario = "kalimocho123";
-	const string passwrd = "123pito123";
+	string usuario = "";
+	string passwrd = "";
 
 	string inputUsuario = " ";
 	string inputPasswrd = " ";
+
+	cout << "Vamos a crearte una cuenta : " << endl;
+	cout << endl << "Como te quieres llamar? : " << endl;
+	cin >> usuario;
+	cout << "Pon una contraseña para mayor seguridad : " << endl;
+	cin >> passwrd;
+	
+	Sleep(1000);
+	system("cls");
 
 
 	while (usuario != inputUsuario || passwrd != inputPasswrd)
@@ -36,11 +45,14 @@ int main() {
 		}
 		else
 		{
-			cout << "Credenciales correctas" << endl;
+			cout << "Procesando la informacion..." << endl;
+			Sleep(5000);
+			cout << "------------------" << endl;
+			cout << "ACCESO VALIDADO" << endl;
+			cout << "------------------" << endl;
 		}
-		Sleep(1000);
+		Sleep(2000);
 		system("cls");
-		Sleep(1);
 	}
 
 
